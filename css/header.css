@@ -1,0 +1,105 @@
+header{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav-bar {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#nav-bar ul { 
+    display: flex; 
+    padding: 0;   
+    margin: 0;
+    list-style: none;
+    align-items: flex-end;
+}
+
+#nav-bar a:hover { 
+    color: #0065fc;
+}
+#logo {
+    display: flex;
+    height: 50px ;
+    margin-left: 0px;
+}
+
+
+
+@media all and (max-width:768px) { /* mobile */
+
+   #logo {
+        margin-top: 25px;  
+        margin-left: 190px;
+        display: flex;
+    }
+
+    #nav-bar ul{
+        margin-top: 40px;
+    }
+
+    #nav-bar li {
+        flex: 0.5; 
+        border-bottom: solid 3px #f2f2f2; 
+        text-align: center;
+        height: 100%;
+    } 
+  
+    #nav-bar li:hover { 
+        border-bottom: solid 3px #0065fc;
+    }
+
+    #nav-bar a{
+        display: block;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media all and (min-width:768px) { /* tablette et desktop*/
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        position: absolute;
+        top: 45px;  
+        left: 25px;
+    }
+
+    
+    #nav-bar {
+        display: flex;
+        align-items: baseline;
+    }
+
+    #nav-bar li {
+        border-top: solid 3px white; 
+        text-align: center; 
+        height: 100%; 
+    } 
+
+    #nav-bar li:hover { 
+        border-top: solid 3px #0065fc;
+    }
+
+    #nav-bar a{
+        display: block;
+        padding: 50px 35px 0 35px; 
+    }
+}
+
+
+@media all and (min-width: 992px) { /* desktop*/
+
+    header{
+        position: relative;
+    }
+
+    #logo {  
+        left: 0px;
+    }
+}
